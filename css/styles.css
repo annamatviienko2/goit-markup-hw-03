@@ -14,12 +14,40 @@ color: var(--paragraf-color);
 font-family: 'Roboto', sans-serif;
 letter-spacing: 0.03em;
 
-
 }
 
-/* прибирання маркерів */
+/* Класс для обнуления базовых свойств у списков (ul) */
 ul {
 list-style: none;
+padding: 0;
+margin: 0;
+}
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+/* Свойства для корректного отображения картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Свойства для обнуления курсива у address */
+address {
+  font-style: normal;
 }
 
 /*фоновий колір Наші Цінності - #F5F5F5*/
@@ -33,6 +61,22 @@ list-style: none;
 /* колір телефону та пошти в футері - rgba(255, 255, 255, 0.6)*/
 
 /* стилі хедера */
+
+
+.page-header {
+    background-color: var(--background-color);
+}
+
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 
 .logo {
     color: var(--text-accent-color);
@@ -51,10 +95,16 @@ color: #000000;
 
 }
 
+.logo-footer {
+    margin-bottom: 20px;
+
+}
+
 .logo-studiofooter {
 color: var(--background-color);
 
 }
+
 
 .nav .nav-link.current {
     color: var(--text-accent-color);
@@ -101,10 +151,21 @@ color: var(--background-color);
     /* стилі головної сторінки */
 
 .hero {
+
+    outline: 2px solid tomato;
+
+    text-align: center;
     background-color: #2F303A;
-}
+    
+    }
 
 .hero-title {
+
+    outline: 2px solid #ffffff;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+
     color: var(--background-color);
   
         font-weight: 900;
@@ -117,6 +178,12 @@ color: var(--background-color);
 
 
 .hero-button {
+
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        padding: 10px 32px;
+        min-width: 216px;
+
     background-color: var(--text-accent-color);
     color: var(--background-color);
 
@@ -133,6 +200,7 @@ color: var(--background-color);
 .hero-button:hover, .hero-button:focus {
     background-color: #188CE8;
     
+    
     }
 .visually-hidden {
     position: absolute;
@@ -148,6 +216,8 @@ color: var(--background-color);
 }
 
 .section-title {
+    margin-bottom: 50px;
+
     color: var(--header-color);
 
     font-weight: 700;
@@ -158,6 +228,10 @@ color: var(--background-color);
 
 
 .title-name {
+
+    margin-top: 0;
+    margin-bottom: 10px;
+
     color: var(--header-color);
 
     font-weight: 700;
@@ -167,6 +241,8 @@ color: var(--background-color);
 }
 .values {
 
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -178,9 +254,18 @@ color: var(--background-color);
 
 .team-item {
     background-color: var(--background-color);
+    border: 2px dashed #2196F3;
+   
+        
+}
+
+.team-photo {
+    margin-bottom: 30px;
 }
 
 .team-member {
+    margin-bottom: 10 px;
+
     color: var(--header-color);
 
     font-weight: 500;
@@ -189,13 +274,23 @@ color: var(--background-color);
 }
 
 .team-profession {
+    margin-bottom: 0;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
 }
 /* стилі сторінки Портфоліо */
 
+.button-list {
+    margin-bottom: 56px;
+}
+
 .portfolio-button {
+
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 73px;
 
     background-color: var (--secondary-background-color);
     color: var(--header-color);
@@ -209,6 +304,8 @@ color: var(--background-color);
 
 .portfolio-button:hover, .portfolio-button:focus {
 
+    padding: 6px 25px;
+
     background-color: var(--text-accent-color);
     color: var(--background-color);
    
@@ -221,9 +318,16 @@ color: var(--background-color);
 .project {
 text-decoration: none;
 
+
+}
+
+.project-image {
+    margin-bottom: 20px;
 }
      
 .projects-title {
+
+    margin-bottom: 4px;
     color: var(--header-color);
 
     font-weight: 700;
@@ -236,7 +340,9 @@ text-decoration: none;
 
 .projects-filter {
 
-    color: var(--paragraf-color)
+    margin-bottom: 0;
+
+    color: var(--paragraf-color);
     
     font-size: 16px;
     line-height: 1.88;
@@ -270,9 +376,20 @@ footer {
 }
 
 .googlemap {
+
+    margin-bottom: 9px;
     color: var(--background-color);
+
 }
 
-.email, .phone {color: rgba(255, 255, 255, 0.6) }
+.email {
+
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
+}
+
+.phone {color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 15px;
+}
 
 

@@ -23,6 +23,12 @@ padding: 0;
 margin: 0;
 }
 
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
 /* Стили для обнуления верхних отступов у элементов */
 h1,
 h2,
@@ -65,20 +71,39 @@ address {
 
 .page-header {
     background-color: var(--background-color);
+    border-bottom: 1px solid #ECECEC;
+   
 }
 
 .container {
     width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+
     margin-left: auto;
     margin-right: auto;
 
+    
+
+    outline: 2px solid tomato;
+    
+
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+   
+    
+}
 
 .logo {
+
     color: var(--text-accent-color);
 
     font-family: 'Raleway', sans-serif;
@@ -105,11 +130,30 @@ color: var(--background-color);
 
 }
 
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    margin-left: 93px;
+    
+}
+
+.nav .item + .item {
+    margin-left: 50px;
+
+}
 
 .nav .nav-link.current {
     color: var(--text-accent-color);
 }
 .nav-link {
+    display: block; 
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--header-color);
 
     font-weight: 500;
@@ -128,7 +172,20 @@ color: var(--background-color);
     letter-spacing: 0.02em;
 } 
 
+.contact {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact .contact-item + .contact-item {
+    margin-left: 50px;
+}
+
 .contact-list {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--paragraf-color);
 
     font-weight: 500;
@@ -161,10 +218,9 @@ color: var(--background-color);
 
 .hero-title {
 
-    outline: 2px solid #ffffff;
-
+    padding-top: 200px;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     color: var(--background-color);
   
@@ -179,10 +235,12 @@ color: var(--background-color);
 
 .hero-button {
 
+    margin-bottom: 200px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         padding: 10px 32px;
         min-width: 216px;
+      
 
     background-color: var(--text-accent-color);
     color: var(--background-color);
@@ -215,6 +273,13 @@ color: var(--background-color);
     margin: -1px;
 }
 
+.section-list .section-item + .section-item {
+
+    margin-left: 30px;
+
+}
+
+
 .section-title {
     margin-bottom: 50px;
 
@@ -239,6 +304,12 @@ color: var(--background-color);
     line-height: 1.14;
     text-transform: uppercase;
 }
+
+.section-list {
+    display: flex;
+
+}
+
 .values {
 
     margin-top: 0;
@@ -247,6 +318,8 @@ color: var(--background-color);
     line-height: 1.71;
 }
 
+
+
 .team {
    background-color: var(--secondary-background-color); 
    
@@ -254,7 +327,9 @@ color: var(--background-color);
 
 .team-item {
     background-color: var(--background-color);
-    border: 2px dashed #2196F3;
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
    
         
 }
@@ -271,20 +346,31 @@ color: var(--background-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
 }
 
 .team-profession {
-    margin-bottom: 0;
+    margin-bottom: 30px;
 
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
 }
 /* стилі сторінки Портфоліо */
 
 .button-list {
-    margin-bottom: 56px;
+    display: flex;
+    margin-top: 94px;
+    margin-bottom: 50px;
+    justify-content: center;
+
 }
+
+.button-list .button-item + .button-item {
+    margin-left: 8px;
+}
+
 
 .portfolio-button {
 
@@ -315,9 +401,38 @@ color: var(--background-color);
     background-color: #EEEEEE;
 }
 
+
+.project-list {
+    
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: -30px;
+    margin-left: -30px;
+    margin-bottom: 94px;
+
+    
+    
+}
+
+.project-item {
+
+    flex-basis: calc(100% / 3 - 30px);
+
+    margin-left: 30px;
+    margin-top: 30px;
+    
+
+    outline: 2px solid tomato;
+}
+
 .project {
 text-decoration: none;
-
 
 }
 
@@ -327,26 +442,31 @@ text-decoration: none;
      
 .projects-title {
 
+    padding-left: 24px;
     margin-bottom: 4px;
+
     color: var(--header-color);
 
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    text-decoration: none;
-    list-style-type: none;
+
+    
 }
 
 .projects-filter {
 
     margin-bottom: 0;
-
+    padding-left: 24px;
     color: var(--paragraf-color);
-    
+
+       
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+   
+       
 }
 
 /* стилі футера */

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="uk">
 
 <head>
@@ -19,21 +20,23 @@
 <body>
     <!--шапка сайта-->
     <header class="page-header">
-        <div class="container">
-        <nav>
-            <a href=".index.html" class="logo">
-                <span>Web</span><span class="logo-studioheader">Studio</span> </a>
-            <ul class ="nav">
-                <li> <a class="nav-link" href="./index.html"> Студія </a></li>
-                <li> <a class="nav-link current" href="./portfolio.html" > Портфоліо </a></li>
-                <li> <a class="nav-link" href="#" > Контакти </a></li>
+        <div class="container header-list">
+            <nav class="main-nav">
+                <a href=".index.html" class="logo">
+                    Web<span class="logo-studioheader">Studio</span> </a>
+    
+                <ul class="nav">
+                    <li class="item"> <a class="nav-link current" href="./index.html"> Студія </a></li>
+                    <li class="item"> <a class="nav-link" href="./portfolio.html"> Портфоліо </a></li>
+                    <li class="item"> <a class="nav-link" href="#"> Контакти </a></li>
+                </ul>
+            </nav>
+    
+            <ul class="contact">
+                <li class="contact-item"> <a class="contact-list" href="mailto:info@devstudio.com">info@devstudio.com </a>
+                </li>
+                <li class="contact-item"> <a class="contact-list" href="tel:+380961111111">+380961111111</a></li>
             </ul>
-        </nav>
-
-        <ul class="contact">
-            <li> <a class="contact-list" href="mailto:info@devstudio.com">info@devstudio.com </a> </li>
-            <li> <a class="contact-list" href="tel:+380961111111">+380961111111</a></li>
-        </ul>
         </div>
     </header>
 
@@ -47,74 +50,83 @@
                      
             <Ul class="button-list">
 
-                <li> <button type ="button" class="portfolio-button"> Усі </button> </li>
-                <li> <button type ="button" class="portfolio-button">  Веб-сайти </button> </li>
-                <li> <button type ="button" class="portfolio-button">  Додатки </button> </li>
-                <li> <button type ="button" class="portfolio-button"> Дизайн  </button> </li>
-                <li> <button type ="button" class="portfolio-button">  Маркетинг </button> </li>
+                <li class="button-item"> <button type ="button" class="portfolio-button"> Усі </button> </li>
+                <li class="button-item"> <button type ="button" class="portfolio-button">  Веб-сайти </button> </li>
+                <li class="button-item"> <button type ="button" class="portfolio-button">  Додатки </button> </li>
+                <li class="button-item"> <button type ="button" class="portfolio-button"> Дизайн  </button> </li>
+                <li class="button-item"> <button type ="button" class="portfolio-button">  Маркетинг </button> </li>
 
             </Ul>
 
-                <Ul class="Project-list">
-                <li>
+            <Ul class="project-list">
+
+                <li class="project-item">
                     <a class="project" href="#">
-                    <img  class="project-image" src="./images/technokriak.jpg" alt="Технокряк вебсайти" width="370" class="photo-background">
+                    <img  class="project-image" src="./images/technokriak.jpg" alt="Технокряк вебсайти" width="370">
                     <h2 class="projects-title"> Технокряк </h2>
                     <p class="projects-filter"> Веб сайт </p>
                     </a>
                 </li>
-                <li>
+
+                <li class="project-item">
                     <a class="project" href="#">
-                    <img class="project-image" src="./images/neworlean.jpg" alt="Постер New Orlean vs Golden Star" width="370" class="photo-background">
+                    <img class="project-image" src="./images/neworlean.jpg" alt="Постер New Orlean vs Golden Star" width="370">
                     <h2 class="projects-title"> Постер New Orlean vs Golden Star </h2>
                     <p class="projects-filter"> Дизайн </p>
                     </a>
                 </li>
-                <li>
+
+                <li class="project-item">
                     <a class="project" href="#">
-                    <img class="project-image" src="./images/seafood.jpg" alt=" Додаток ресторана Seafood" width="370" class="photo-background">
+                    <img class="project-image" src="./images/seafood.jpg" alt=" Додаток ресторана Seafood" width="370">
                     <h2 class="projects-title"> Ресторан Seafood </h2>
                     <p class="projects-filter"> Додаток </p>
                     </a>
                 </li>
-                <li>
+
+                <li class="project-item">
                     <a class="project" href="#">
-                    <img class="project-image" src="./images/prime.jpg" alt="Проєкт Prime" width="370" class="photo-background">
+                    <img class="project-image" src="./images/prime.jpg" alt="Проєкт Prime" width="370">
                     <h3 class="projects-title"> Проєкт Prime </h3>
                     <p class="projects-filter"> Маркетинг </p>
                     </a>
                 </li>
-                <li>
+
+                <li class="project-item">
                     <a class="project" href="#">
-                    <img class="project-image" src="./images/boxes.jpg" alt="Додаток Boxes" width="370" class="photo-background">
+                    <img class="project-image" src="./images/boxes.jpg" alt="Додаток Boxes" width="370">
                     <h2 class="projects-title"> Проєкт Boxes </h2>
                     <p class="projects-filter"> Додаток </p>
                     </a>
                 </li>
-                <li>
+
+                <li class="project-item">
                     <a class="project" href="#">
-                    <img class="project-image" src="./images/inspiration.jpg" alt=" Веб сайт Inspiration has no borders" width="370" class="photo-background">
+                    <img class="project-image" src="./images/inspiration.jpg" alt=" Веб сайт Inspiration has no borders" width="370">
                     <h2 class="projects-title"> Inspiration has no Borders </h2>
                     <p class="projects-filter"> Веб-сайт </p>
                     </a>
                 </li>
-                <li>
+
+                <li class="project-item">
                     <a class="project" href="#"> 
-                    <img class="project-image" src="./images/limitededition.jpg" alt="Видання Limited Edition" width="370" class="photo-background">
+                    <img class="project-image" src="./images/limitededition.jpg" alt="Видання Limited Edition" width="370">
                     <h2 class="projects-title"> Видання Limited Edition </h2>
                     <p class="projects-filter"> Дизайн </p>
                     </a>
                 </li>
-                <li>
+
+                <li class="project-item">
                     <a class="project" href="#">
-                    <img class="project-image" src="./images/lab.jpg" alt="Проєкт Lab" width="370" class="photo-background">
+                    <img class="project-image" src="./images/lab.jpg" alt="Проєкт Lab" width="370">
                 <h2 class="projects-title"> Проєкт LAB </h2>
                 <p class="projects-filter"> Маркетинг </p>
                     </a>
                 </li>
-                <li>
+
+                <li class="project-item">
                     <a class="project" href="#">
-                    <img class="project-image" src="./images/growingbusiness.jpg" alt="Додаток Growing Business" width="370" class="photo-background">
+                    <img class="project-image" src="./images/growingbusiness.jpg" alt="Додаток Growing Business" width="370">
                     <h2 class="projects-title"> Growing Business </h2>
                     <p class="projects-filter"> Додаток </p>
                     </a>

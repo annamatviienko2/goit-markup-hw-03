@@ -38,7 +38,7 @@
      <!--головна частина-->
      <main>
     <!--секція №1-->
-        <section class = "hero">
+        <section class = "hero section">
             <div class="container"> 
             <h1 class = "hero-title">Ефективні рішення для <br>вашого бізнесу</h1>
             <button type="button" class = "hero-button"> Замовити послугу </button>
@@ -49,22 +49,27 @@
         <div class="container"> 
         <h2 class="section-title  visually-hidden"> Наші цінності </h2>
         <Ul class="section-list">
+
             <Li  class="section-item">
                 <h3 class = "title-name"> Увага до деталей </h3>
                 <p class="values"> Ідейні міркування, і навіть початок повсякденної роботи з формування позиції. </p>
             </Li>
+
             <Li  class="section-item">
                 <h3 class = "title-name"> Пунктуальність </h3>
                 <p class="values"> Завдання організації, особливо рамки і місце навчання кадрів тягне у себе. </p>
             </Li>
+
             <Li  class="section-item">
                 <h3 class = "title-name"> Планування </h3>
                 <p class="values"> Так само консультація з широким активом значною мірою зумовлює. </p>
             </Li>
+
             <Li  class="section-item">
                 <h3 class = "title-name"> Сучасні технології </h3>
                 <p class="values"> Значимість цих проблем настільки очевидна, що реалізація планових завдань. </p>
             </Li>
+            
         </Ul>
         </div>
         </section>
@@ -74,9 +79,9 @@
             <div class="container"> 
         <h2 class = "section-title">Чим ми займаємося </h2>
         <ul class="section-list">
-            <li  class="section-item"> <img src="./images/photo1.jpg" alt="Людина друкує на комп'ютері" width="370"> </li>
-            <li  class="section-item"><img src="./images/photo2.jpg" alt="Мобільний телефон в руці" width="370"></li>
-            <li  class="section-item"><img src="./images/photo3.jpg" alt="Планшет в руках" width="370"></li>
+            <li  class="section-image"> <img src="./images/photo1.jpg" alt="Людина друкує на комп'ютері" width="370"> </li>
+            <li  class="section-image"><img src="./images/photo2.jpg" alt="Мобільний телефон в руці" width="370"></li>
+            <li  class="section-image"><img src="./images/photo3.jpg" alt="Планшет в руках" width="370"></li>
         </ul>
         </div>
     </section>
@@ -86,39 +91,63 @@
         <div class = container> 
         <h2 class = "section-title"> Наша команда </h2>
         <Ul class ="section-list">
+
             <Li class= "team-item section-item">
+
                 <img class="team-photo" src="./images/ihor.jpg" alt="Ігор Дем'яненко" width="270">
+                
+                <div class="team-signature"> 
                 <h3 class = "team-member"> Ігор Дем'яненко</h3>
                 <p class = "team-profession" lang ="en">  Product Designer </p>
+                </div>
+
             </Li>
+
             <Li class="team-item section-item">
+
                 <img class="team-photo"  src="./images/olha.jpg" alt="Ольга Рєпіна" width="270">
+               
+                <div class="team-signature"> 
                 <h3 class = "team-member"> Ольга Рєпіна </h3>
                 <p class = "team-profession" lang ="en">  Frontend Developer </p>
+                </div>
+                
             </Li>
+
             <Li class="team-item section-item">
+
                 <img class="team-photo"  src="./images/mykola.jpg" alt="Микола Тарасов" width="270">
+                
+                <div class="team-signature"> 
                 <h3 class = "team-member"> Микола Тарасов </h3>
                 <p class = "team-profession" lang ="en"> Marketing </p>
+                </div>
             </Li>
+
             <Li class = "team-item section-item">
+               
                 <img class="team-photo" src="./images/mykhailo.jpg" alt="Михайло Єрмаков" width="270">
+               
+                <div class="team-signature"> 
                 <h3 class = "team-member"> Михайло Єрмаков </h3>
                 <p class = "team-profession" lang ="en">  UI Designer </p>
+                </div>
+
             </Li>
         </Ul>
         </div>
     </Section>
 </main>
  <!--підвал-->
-<footer>
+ 
+<footer class="footer">
     <div class="container"> 
     <a href=".index.html" class="logo logo-footer">
         <span class="logo-web">Web</span><span class="logo-studiofooter">Studio</span> </a>
     <address>
        <Ul>
-        <li><a class="address-list googlemap" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"> м. Київ, пр-т Лесі Українки, 26</a></li>
-        <li> <a class="address-list email" href="mailto:info@devstudio.com"> info@devstudio.com </a> </li>
+        <li class="map"><a class="address-list googlemap " href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"> м. Київ, пр-т Лесі Українки, 26</a></li>
+        <li class="mailto"> <a class="address-list email" href="mailto:info@devstudio.com"> info@devstudio.com </a> </li>
         <li><a class="address-list phone" href="tel:+380961111111"> +380961111111</a> </li>
        </Ul>
       </address>

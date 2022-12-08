@@ -202,8 +202,13 @@ color: var(--background-color);
 
 .hero {
 
-      text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    text-align: center;
     background-color: #2F303A;
+
+   
     
     }
 
@@ -267,6 +272,10 @@ color: var(--background-color);
  .section {
      padding-top: 94px;
      padding-bottom: 94px;
+ }
+
+ .section-top {
+    padding-top: 0;
  }
 
 .section-list {
@@ -370,6 +379,8 @@ color: var(--background-color);
 }
 
 .team-profession {
+
+    margin-bottom: 0;
     
     font-weight: 400;
     font-size: 16px;
@@ -428,9 +439,7 @@ color: var(--background-color);
 
     margin-top: -30px;
     margin-left: -30px;
-    margin-bottom: 94px;
-
-    
+       
     
 }
 
@@ -500,6 +509,9 @@ text-decoration: none;
     padding-bottom: 60px;
 }
 
+.address {
+    margin-top: 20px;
+}
 
 .address-list {
 
@@ -524,15 +536,13 @@ text-decoration: none;
 
 .googlemap {
 
-    margin-top: 200px;
-    margin-bottom: 99px;
+   
     color: var(--background-color);
-
     
-
 }
+
 .map {
-    margin-top: 20px;
+  
     margin-bottom: 9px;
 }
 
